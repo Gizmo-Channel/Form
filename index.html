@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>Form Activity</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
@@ -61,10 +66,43 @@
             text-align: center;
             margin-right: 260px;
         }
+
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
     </style>
 </head>
 <body>
-    <h1>Activity: My Slam Book</h1>
+    <div class="form-group">    
+        <button onclick="darkMode()">Darkmode</button>
+        <button onclick="lightMode()">LightMode</button>
+    </div>
+
+    <h1 id="DarkModetext">Activity: My Slam Book</h1>
+
+    <script>
+        function darkMode() {
+            let element = document.body;
+            element.className = "dark-mode";
+        }
+        function lightMode() {
+            let element = document.body;
+            element.className = "light-mode";
+        }
+    </script>
     <form>
         <div class="form-group">
             <label>Name:</label>
@@ -151,6 +189,6 @@
             <button type="reset">Clear</button>
         </div>
     </form>
-    
+
 </body>
 </html>
