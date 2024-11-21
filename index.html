@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Activity</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center; 
+            font-size: 13px;
+        }
+        .form-group label {
+            width: 150px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            flex: 1;
+            padding: 2px;
+            font-size: 14px;
+        }
+
+        label{
+            text-transform: uppercase;
+        }
+
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+
+        .color input{
+            cursor: pointer;
+        }
+
+        button {
+            padding: 5px 15px;
+            background-color: white;
+            color: black;
+            border: solid 1;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: lightsteelblue;
+        }
+
+        .color{
+            text-transform: capitalize; 
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-right: 260px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Activity: My Slam Book</h1>
+    <form>
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Nickname:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Address:</label>
+            <input type="text" >
+        </div>
+        <div class="form-group">
+            <label >Birthday:</label>
+            <input type="date">
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <div>
+            <label class="color"><input type="radio"> Male </label>
+            <label class="color"><input type="radio"> Female</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Motto:</label>
+            <textarea></textarea>
+        </div>
+        <div class="form-group">
+            <label >Hobbies:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Skills:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Goals:</label>
+            <textarea></textarea>
+        </div>
+        <h3>Faves:</h3>
+        <div class="form-group">
+            <label>Colors:</label>
+            <div>
+                <label class="color"><input type="checkbox"> Red</label>
+                <label class="color"><input type="checkbox"> Black</label><br>
+                <label class="color"><input type="checkbox"> Pink</label>
+                <label class="color"><input type="checkbox"> Yellow</label><br>
+                <label class="color"><input type="checkbox"> Blue</label>
+                <label class="color"><input type="checkbox"> Green</label><br>
+                <label class="color"><input type="checkbox"> Others Please Specify: </label><input type="text"></label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Pet:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Cartoon Movie:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label >Cartoon Character:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Food:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Restaurant:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Why do you like me as your friend?</label>
+            <textarea></textarea>
+        </div>
+        <div class="form-group">
+            <label>Message for me:</label>
+            <textarea></textarea>
+        </div>
+        <div>
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+    
+</body>
+</html>
